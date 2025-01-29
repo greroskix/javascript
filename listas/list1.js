@@ -43,8 +43,8 @@ let num2 = 10
 let num3 = 7
 let media = num1 + num2 + num3
 let conta = media/3
-console.log("Média: ", conta);
-console.log("")
+console.log("Média: ", conta)
+console.log("");
 
 // Exercício 5:
 
