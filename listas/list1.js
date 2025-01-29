@@ -1,7 +1,6 @@
 // Exercício 1:
 
 console.log("Ex1:")
-console.log("")
 let a = 7
 let b = 77
 
@@ -14,16 +13,39 @@ console.log(soma)
 console.log(sub)
 console.log(mult)
 console.log(div)
-console.log(resto);
+console.log(resto)
+console.log("");
 
 // Exercício 2:     
 
 console.log("Ex2:")
-console.log("")
 let height = 20
 let width = 10
 let x = height * width
-console.log("Área do retângulo: ",x);
+console.log("Área do retângulo: ",x)
+console.log("");
 
 // Exercício 3:
+
+console.log("Ex3:")
+let y = 14
+let dobro = 14 * 2
+let metade = 14 / 2
+console.log("Dobro do Número: ", dobro)
+console.log("Metade do Número: ", metade)
+console.log("");
+
+// Exercício 4:
+
+console.log("Ex4:")
+
+let num1 = 8
+let num2 = 10
+let num3 = 7
+let media = num1 + num2 + num3
+let conta = media/3
+console.log("Média: ", conta);
+console.log("")
+
+// Exercício 5:
 
