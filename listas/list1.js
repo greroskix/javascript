@@ -38,7 +38,6 @@ console.log("");
 // Exercício 4:
 
 console.log("Ex4:")
-
 let num1 = 8
 let num2 = 10
 let num3 = 7
@@ -48,4 +47,9 @@ console.log("Média: ", conta);
 console.log("")
 
 // Exercício 5:
+
+console.log("Ex5:")
+let celsius = 27
+let fahr = celsius * 9/5 + 32
+console.log(celsius,"° Celsius são ", fahr,"° em Fahrenheit");
 
