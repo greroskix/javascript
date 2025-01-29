@@ -9,11 +9,11 @@ let sub = a - b
 let mult = a * b
 let div = a / b
 let resto = a % b
-console.log(soma)
-console.log(sub)
-console.log(mult)
-console.log(div)
-console.log(resto)
+console.log("Soma: ", soma)
+console.log("Subtração: ", sub)
+console.log("Multiplicação: ", mult)
+console.log("Divisão: ", div)
+console.log("Resto: ", resto)
 console.log("");
 
 // Exercício 2:     
