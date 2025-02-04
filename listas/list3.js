@@ -1,7 +1,7 @@
 // Exercício 1:
 
 console.log("Ex1:")
-let idade = 18
+let idade = 17
 if (idade >=18 ){
     console.log("Você é maior de idade.")
 }else {
