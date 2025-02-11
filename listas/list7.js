@@ -77,8 +77,8 @@ console.log("")
 console.log("Exercício 8:")
 let nome = prompt("Escreva um nome:")
 let num = prompt("Digite um número:")
-let inicio = 0
-while (inicio < num){
+let x = 0
+while (x < num){
     console.log(nome)
-    inicio+=1
+    x+=1
 }
