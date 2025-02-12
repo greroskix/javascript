@@ -73,3 +73,5 @@ do{
     }
     ex6 = prompt("Caso deseja continuar, digite 's', caso queira parar digite qualquer outra tecla");
 }while(ex6 == "s")  
+
+    
