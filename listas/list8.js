@@ -71,5 +71,5 @@ do{
     let soma = num1 + num2
     console.log("Valor da conta:", soma)
     }
-    ex6 = prompt("Caso deseja continuar, digite 's', caso queira parar digite qualquer outra tecla.");
+    ex6 = prompt("Caso deseja continuar, digite 's', caso queira parar digite qualquer outra tecla");
 }while(ex6 == "s")  
