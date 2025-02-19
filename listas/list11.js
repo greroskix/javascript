@@ -79,9 +79,9 @@ function compararIdade(){
     let idade1 = prompt("Digite a idade da primeira pessoa:")
     let idade2 = prompt("Digite a idade da segunda pessoa:")
     if(idade1 > idade2){
-        console.log("A primeira pessoa com", idade1, "e mais velha")
+        console.log("A primeira pessoa com", idade1, "anos é mais velha")
     }else if(idade2 > idade1){
-        console.log("A segunda pessoa com", idade2, "e mais velha.")
+        console.log("A segunda pessoa com", idade2, "anos é mais velha.")
     }else if(idade1 == idade2){
         console.log("As duas pessoas tem", idade1, "anos.")
     }
