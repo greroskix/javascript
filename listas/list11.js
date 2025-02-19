@@ -67,7 +67,7 @@ console.log("")
 
 console.log("Ex7:")
 function calcularAreaRetangulo(){
-    let largura = Number(prompt("Vamos descobrir a Áarea de um retângulo, Digite primeiro sua largura:"))
+    let largura = Number(prompt("Vamos descobrir a Área de um retângulo, Digite primeiro sua largura:"))
     let altura = Number(prompt("Agora digite sua altura:"))
     console.log("Área do Retângulo:")
     let ex7 = largura * altura
