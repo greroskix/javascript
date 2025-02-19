@@ -54,22 +54,26 @@ console.log("")
 // Exercício 6:
 
 console.log("Ex6:")
-function somar(a, b){
+function somar(){
+    let a = Number(prompt("Digite o primeiro número para uma adição:"))
+    let b = Number(prompt("Digite o segundo número para uma adição:"))
     let ex6 = a + b
-    return ex6
+    console.log(ex6)
 }
-console.log(somar(7, 77))
+somar()
 console.log("")
 
 // Exercício 7:
 
 console.log("Ex7:")
-function calcularAreaRetangulo(largura, altura){
+function calcularAreaRetangulo(){
+    let largura = Number(prompt("Vamos descobrir a Áarea de um retângulo, Digite primeiro sua largura:"))
+    let altura = Number(prompt("Agora digite sua altura:"))
     console.log("Área do Retângulo:")
     let ex7 = largura * altura
-    return ex7
+    console.log(ex7)
 }
-console.log(calcularAreaRetangulo(7, 8))
+calcularAreaRetangulo()
 console.log("")
 
 // Exercício 8:
