@@ -18,3 +18,6 @@ function ex2() {
 }
 
 // Exercício 3:
+
+
+// Exercício 4:
