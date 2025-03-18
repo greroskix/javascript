@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+@font-face{
+    font-family: "mont";
+    src: url(assets/fonts/Montserrat-VariableFont_wght.ttf);
+}
+.container{
+    display: flex;
+    margin: 0 50px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 50px;
+}
+a{
+    text-decoration: none;
+    font-family: "mont";
+    font-size: 24px;
+    color: darkgreen;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}

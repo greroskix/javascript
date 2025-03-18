@@ -134,5 +134,5 @@ function trocaimagem3() {
 
 function destrocaimagem3() {
     let filme1 = document.getElementById("filme3");
-    filme1.src = "img/filme-acao.png";
+    filme1.src = "img/filme-romance.png";
 }
