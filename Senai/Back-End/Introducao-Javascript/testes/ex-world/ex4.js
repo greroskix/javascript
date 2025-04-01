@@ -1,1 +1,0 @@
-console.log("Olá, meu nome é André.")
