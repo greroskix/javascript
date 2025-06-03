@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "montserrat-bold";
+    src: url(../verificar_senha/font/montserrat/static/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: "montserrat";
+    src: url(../verificar_senha/font/montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f4f8;
+    font-family: "montserrat", sans-serif;
+    padding: 20px;
+}
+
+.receba {
+    background-color: #fff;
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+}
+
+.receba:hover {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    font-family: "montserrat-bold", sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.receba2 {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 1rem;
+    border: 1.5px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    font-family: "montserrat", sans-serif;
+    margin-bottom: 20px;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+.receba2:focus {
+    border-color: #00bcd4;
+    box-shadow: 0 0 0 3px rgba(0, 188, 212, 0.2);
+}
