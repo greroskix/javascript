@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dungeons & Senai</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Dungeons & Senai</h1>
+    <div id="historia">
+        <p>Prazer guerreiro, você foi convocado para fazer 2 anos de curso técnico no senai, escolha seu curso com
+            sabedoria.</p>
+        <button onclick="escolha1('ads')">Desenvolvimento de Sistemas</button>
+        <button onclick="escolha1('mec')">Mecânica</button>
+
+    </div>
+
+    <script>
+
+        // Primeira escolha.
+
+        function escolha1(resposta) {
+            const div = document.getElementById("historia");
+
+            if (resposta === "ads") {
+                div.innerHTML = `
+                    <p>Ótima escolha soldado, realmente o curso de Desenvolvimento de Sistemas vai agregar bastante em seu futuro.</p>
+                    <p>Agora que você escolheu seu curso de Desenvolvimento de Sistemas escolha seu artefato sagrado: (Você vai precisar dela no futuro, então cuidado com a escolha)</p>
+
+                    <button onclick="escolha2('artefato1')">Planilha mágica do Excel!</button>
+                    <button onclick="escolha2('artefato2')">Livro almadiçoado do FrontEnd!</button>
+                `;
+            } else if (resposta === "mec") {
+                div.innerHTML = `
+                    <p>Ótima escolha soldado, realmente o curso de Técnico em Mecânica vai agregar bastante em seu futuro.</p>
+                    <p>Agora que você escolheu seu curso de Técnico em Mecânica, escolha sua ferramenta sagrada: (Você vai precisar dela no futuro, então cuidado com a escolha)</p>
+
+                    <button onclick="escolha2('ferramenta1')">O torno lendário!</button>
+                    <button onclick="escolha2('ferramenta2')">Manual almadiçoado em Latim!</button>
+                `;
+            }
+        }
+
+        // Segunda escolha.
+
+        function escolha2(resposta) {
+            const div = document.getElementById("historia");
+
+            if (resposta === "artefato1") {
+                div.innerHTML = `
+                    <p>Ótima escolha soldado, realmente a Planilha Mágica do Excel pode ser muito útil para seu futuro, Forjada nas masmorras da Microsoft por magos corporativos, essa relíquia contém fórmulas tão poderosas que podem prever o futuro financeiro de reinos inteiros. Dizem que quem domina suas tabelas dinâmicas pode manipular o tempo.</p>
+                    <p>Agora que você escolheu seu Artefato Sagrado de Dev, você vai passar pelo seu primeiro e último desafio, o tão témido TCC...</p>
+                    <p>Seu Docente, Washington Paiva passou o desafio para você fazer um aplicativo, onde permite o usuário a construir tabelas infinitas no excel mobile!</p>
+                    <p>Oque você faz?</p>
+                
+                    <button onclick="escolha3('tcc1')">
+                        Utiliza a habilidade especial da Planilha Mágica do Excel: <em>Manipulação Temporal</em>, para entregar seu trabalho no tempo que for necessário, para fazer o trabalho perfeito!
+                    </button>
+                    <button onclick="escolha3('tcc2')">
+                        Invoca o poder oculto da função PROCV para buscar automaticamente os requisitos do TCC escondidos nos reinos de dados e entregar seu trabalho cumprindo todos os requisitos!
+                    </button>
+                `;
+            } else if (resposta === "artefato2") {
+                div.innerHTML = `
+                    <p>Ótima escolha soldado, realmente o curso de Técnico em Mecânica vai agregar bastante em seu futuro.</p>
+                    <p>Agora que você escolheu seu curso de Técnico em Mecânica, escolha sua ferramenta sagrada: (Você vai precisar dela no futuro, então cuidado com a escolha)</p>
+                    <button onclick="escolha2('artefato1')">O torno lendário!</button>
+                    <button onclick="escolha2('artefato2')">Manual almadiçoado em Latim!</button>
+                `;
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>
