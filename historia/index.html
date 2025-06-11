@@ -9,7 +9,8 @@
 </head>
 
 <body>
-    <h1>Dungeons & Senai</h1>
+    <a href="index.html"><h1>Dungeons & Senai</h1></a>
+    <img src="img/logo_senai.png" class="senai"/>
     <div id="historia">
         <p>Prazer guerreiro, você foi convocado para fazer 2 anos de curso técnico no senai, escolha seu curso com
             sabedoria.</p>
@@ -30,48 +31,204 @@
                     <p>Ótima escolha soldado, realmente o curso de Desenvolvimento de Sistemas vai agregar bastante em seu futuro.</p>
                     <p>Agora que você escolheu seu curso de Desenvolvimento de Sistemas escolha seu artefato sagrado: (Você vai precisar dela no futuro, então cuidado com a escolha)</p>
 
-                    <button onclick="escolha2('artefato1')">Planilha mágica do Excel!</button>
-                    <button onclick="escolha2('artefato2')">Livro almadiçoado do FrontEnd!</button>
+                    <button onclick="escolha2ads('artefato1')">Teclado Automático do BackEnd!</button>
+                    <button onclick="escolha2ads('artefato2')">Livro amaldiçoado do FrontEnd!</button>
                 `;
             } else if (resposta === "mec") {
                 div.innerHTML = `
                     <p>Ótima escolha soldado, realmente o curso de Técnico em Mecânica vai agregar bastante em seu futuro.</p>
                     <p>Agora que você escolheu seu curso de Técnico em Mecânica, escolha sua ferramenta sagrada: (Você vai precisar dela no futuro, então cuidado com a escolha)</p>
 
-                    <button onclick="escolha2('ferramenta1')">O torno lendário!</button>
-                    <button onclick="escolha2('ferramenta2')">Manual almadiçoado em Latim!</button>
+                    <button onclick="escolha2mec('ferramenta1')">O torno lendário!</button>
+                    <button onclick="escolha2mec('ferramenta2')">Manual amaldiçoado em Latim!</button>
                 `;
             }
         }
 
-        // Segunda escolha.
+        // Segunda escolha - ADS.
 
-        function escolha2(resposta) {
+        function escolha2ads(resposta) {
             const div = document.getElementById("historia");
 
             if (resposta === "artefato1") {
                 div.innerHTML = `
-                    <p>Ótima escolha soldado, realmente a Planilha Mágica do Excel pode ser muito útil para seu futuro, Forjada nas masmorras da Microsoft por magos corporativos, essa relíquia contém fórmulas tão poderosas que podem prever o futuro de reinos inteiros. Dizem que quem domina suas tabelas dinâmicas pode manipular o tempo.</p>
+                    <p>Ótima escolha soldado, realmente o Teclado Automático do BackEnd vai ser um artefato muito útil para sua jornada, Forjado nos subterrâneos do Reino da Logitech, este teclado lendário é conectado diretamente ao plano astral do GitHub. Dizem que ele é capaz de codar sozinho linhas inteiras de lógica, enquanto o dev apenas finge estar pensando.</p>
+                    <p> 🧠 Habilidade Especial:
+                        <b>Autocódigo Sombrio</b>
+                        Ao ser ativada, esta habilidade invoca um script ancestral que preenche automaticamente os métodos do back-end com funções otimizadas, comentários técnicos e até testes automatizados — tudo isso antes mesmo de você apertar "Enter".</p>
                     <p>Agora que você escolheu seu Artefato Sagrado de Dev, você vai passar pelo seu primeiro e último desafio, o tão témido TCC...</p>
-                    <p>Seu Docente, Washington Paiva passou o desafio para você fazer um aplicativo, onde permite o usuário a construir tabelas infinitas no excel mobile!</p>
+                    <p>Seu Docente, <b>Washington Paiva</b> passou o desafio para você fazer um software para sua Guilda! Onde e preciso criar um sistema para a administração de uma guilda de guerreiros freelancers devs, com autenticação, ranking de commits, e controle de tempo de café.</p>
                     <p>Oque você faz?</p>
                 
-                    <button onclick="escolha3('tcc1')">
-                        Utiliza a habilidade especial da Planilha Mágica do Excel: <em>Manipulação Temporal</em>, para entregar seu trabalho no tempo que for necessário, para fazer o trabalho perfeito!
+                    <button onclick="escolha3ads('tcc1')">
+                        Você utiliza sua habilidade especial: <b>AUTOCÓDIGO SOMBRIO</b>, onde seu artefato Teclado Automático do BackEnd vai realizar seu código automaticamente.
                     </button>
-                    <button onclick="escolha3('tcc2')">
-                        Invoca o poder oculto da função PROCV para buscar automaticamente os requisitos do TCC escondidos nos reinos de dados e entregar seu trabalho cumprindo todos os requisitos!
+                    <button onclick="escolha3ads('tcc2')">
+                        Você programa manualmente, linha por linha, com disciplina, sem utilizar IA ou outras ajudas. O teclado te observa em silêncio, respeitando sua escolha... mas cada tecla parece mais pesada.
                     </button>
                 `;
             } else if (resposta === "artefato2") {
                 div.innerHTML = `
-                    <p>Ótima escolha soldado, realmente o curso de Técnico em Mecânica vai agregar bastante em seu futuro.</p>
-                    <p>Agora que você escolheu seu curso de Técnico em Mecânica, escolha sua ferramenta sagrada: (Você vai precisar dela no futuro, então cuidado com a escolha)</p>
-                    <button onclick="escolha2('artefato1')">O torno lendário!</button>
-                    <button onclick="escolha2('artefato2')">Manual almadiçoado em Latim!</button>
+                    <p>Ótima escolha soldado, realmente o Livro amaldiçoado do FrontEnd vai ser um artefato muito útil para sua jornada, é um artefato antigo, coberto por linhas de código estilizadas e anotações escritas em JavaScript arcaico. Forjado nas ruínas de fóruns esquecidos e temperado com tutoriais inacabados do YouTube, este livro é tanto uma bênção quanto uma maldição para quem busca dominar o lado visual da magia digital.</p>
+                    <p>✨ Habilidade Especial:
+                        <b>Estilo Fantasma</b>
+                        Ao ser ativada, esta habilidade projeta interfaces encantadoras diretamente na mente do dev, que são traduzidas em código HTML e CSS puro automaticamente — com animações fluídas, responsividade total e até compatibilidade com IE11... mas a um custo: o dev começa a ouvir vozes em React durante o sono.</p>
+                    <p>Agora que você escolheu seu Artefato Sagrado de Dev, você vai passar pelo seu primeiro e último desafio, o tão témido TCC...</p>
+                    <p>Seu Docente, <b>Washington Paiva</b> passou o desafio para você fazer um software para sua Guilda! Onde e preciso criar um sistema para a administração de uma guilda de guerreiros freelancers devs, com autenticação, ranking de commits, e controle de tempo de café.</p>
+                    <p>Oque você faz?</p>
+                    
+
+                    <button onclick="escolha3ads('tcc3')">Você utiliza sua habiliade especial: <b>ESTILO FANTASMA</b>, onde apenas ao pensar na estrutura do site em sua mente, o código vai sendo esquematizado automaticamente direto do seu Visual Studio Code!</button>
+                    <button onclick="escolha3ads('tcc4')">Você realiza seu TCC linha por linha, sem utilizar do seu artefato, o Livro amaldiçoado do FrontEnd te obersva em silêncio, respeitando sua escolha...</button>
                 `;
             }
         }
+
+        // Segunda escolha - Mecânica.
+
+        function escolha2mec(resposta) {
+            const div = document.getElementById("historia");
+
+            if (resposta === "ferramenta1") {
+                div.innerHTML = `
+            <p>Bravo ferreiro, você escolheu o lendário Torno Lendário! Forjado nas minas profundas do Senai do Norte, este torno carrega a força de gerações de torneadores e o poder de moldar até o aço mais teimoso com delicadeza cirúrgica.</p>
+            <p>🛠️ Habilidade Especial:
+                <b>Precisão Ancestral</b> — Ao ser ativada, o torno opera sozinho com precisão milimétrica, esculpindo peças perfeitas mesmo em materiais místicos como Adamantina Fundida ou Ferro do Crepúsculo.
+            </p>
+            <p>Agora que você escolheu sua Ferramenta Sagrada, você enfrentará o desafio final, conhecido apenas pelos veteranos como... o temido TCC.</p>
+            <p>Seu Docente: <b>Marcelo Francisco</b>, designou a missão: você deverá construir um sistema mecânico para automatizar a coleta de minério mágico, com controle de torque, eixo de transmissão e indicadores de runas giratórias.</p>
+            <p>O que você faz?</p>
+
+            <button onclick="escolha3mec('mec1')">
+                Você utiliza sua habilidade especial: PRECISÃO ANCESTRAL. O torno começa a operar sozinho, moldando as peças como se guiado pelos espíritos dos antigos mestres do Senai.
+            </button>
+            <button onclick="escolha3mec('mec2')">
+                Você decide fazer tudo manualmente, com garra e graxa, confiando apenas na força de suas mãos e no suor da sua testa. O torno respeita sua escolha, mas emite um leve zumbido de decepção.
+            </button>
+        `;
+            } else if (resposta === "ferramenta2") {
+                div.innerHTML = `
+            <p>Você escolheu o enigmático Manual Almadicoado em Latim! Escrito por engenheiros mecânicos esquecidos da Idade do Bronze, esse tomo contém fórmulas perdidas e diagramas de máquinas que nunca deveriam ter existido.</p>
+            <p>📜 Habilidade Especial:
+                <b>Sabedoria Proibida</b> — Ao abrir o manual, os cálculos aparecem diretamente em sua mente, como se um antigo espírito de engenharia soprasse as respostas em seus ouvidos. Mas cuidado: há relatos de devaneios com engrenagens dançantes...
+            </p>
+            <p>Agora que você escolheu sua Ferramenta Sagrada, você enfrentará o desafio final, conhecido apenas pelos veteranos como... o temido TCC.</p>
+            <p>Seu Docente:<b>Marcelo Francisco</b>, designou a missão: você deverá construir um sistema mecânico para automatizar a coleta de minério mágico, com controle de torque, eixo de transmissão e indicadores de runas giratórias.</p>
+            <p>O que você faz?</p>
+
+            <button onclick="escolha3mec('mec3')">
+                Você abre o Manual Almadicoado e invoca sua habilidade especial: SABEDORIA PROIBIDA. Instantaneamente, os cálculos aparecem em sua mente, e uma planta baixa começa a se desenhar sozinha na prancheta.
+            </button>
+            <button onclick="escolha3mec('mec4')">
+                Você decide não abrir o manual — encara os cálculos por conta própria, com régua, compasso e alma de engenheiro. O livro apenas ri, em Latim.
+            </button>
+        `;
+            }
+        }
+
+        // Terceira escolha - ADS.
+
+        function escolha3ads(resposta) {
+            const div = document.getElementById("historia");
+
+            if (resposta === "tcc1") {
+                div.innerHTML = `
+                    <p>🌟 Após noites longas e desafios dignos de uma lenda, você finaliza o TCC com excelência utilizando seu artefato: Teclado Automático do BackEnd! </p>
+                    <p>Seu sistema de gestão para a Guilda de Devs se torna referência no Reino do Senai, com commits impecáveis, dashboards encantados e alertas de café sincronizados com o humor dos guerreiros.</p>
+                    <p>Seu docente, <b>Washington Paiva</b>, com os olhos marejados, lhe concede a nota máxima e diz:</p>
+                    <p>"Você não apenas completou o curso... você moldou o futuro da programação!"</p>
+                    <p>Você se forma com honras e é convidado para se tornar Arquiteto de Software Sênior da Guilda Suprema dos Sistemas Sagrados.</p>
+                    <p>🎓 <b>Parabéns, guerreiro. Você concluiu sua jornada com maestria.</b></p>
+                    <p>✨ <i>FIM.</i></p>
+                `;
+            } else if (resposta === "tcc2") {
+                div.innerHTML = `
+                    <p>☠️ Após dias sem dormir, bugs misteriosos começaram a surgir. Os commits não sincronizavam, a autenticação se perdia no limbo digital, e o ranking de commits invertia a ordem por vontade própria.</p>
+                    <p>Mesmo com o poder do seu artefato, ou sua bravura em codar linha por linha, o projeto foi entregue... mas com falhas que o próprio GitHub se recusou a aceitar.</p>
+                    <p>Seu docente, <b>Washington Paiva</b>, te olha com um misto de compaixão e decepção e diz:</p>
+            
+                    <p>"Nem todo dev vence na primeira batalha. Volte, corrija, recomece. O verdadeiro guerreiro se forja no erro."</p>
+        
+                    <p>Você não passou no TCC... ainda. Mas sai da sala com mais conhecimento, cicatrizes digitais e a certeza de que um dia vai criar o sistema perfeito.</p>
+                    <p>⚔️ <i>Às vezes, perder uma luta é o que molda o verdadeiro herói.</i></p>
+                    <p>💀 <b>Fim</b></p>
+                `;
+            } else if (resposta === "tcc3") {
+                div.innerHTML = `
+                    <p>🌟 Após noites longas e desafios dignos de uma lenda, você finaliza o TCC com excelência utilizando seu artefato: O livro amaldiçoado do FrontEnd!</p>
+                    <p>Seu sistema de gestão para a Guilda de Devs se torna referência no Reino do Senai, com commits impecáveis, dashboards encantados e alertas de café sincronizados com o humor dos guerreiros.</p>
+                    <p>Seu docente, <b>Washington Paiva</b>, com os olhos marejados, lhe concede a nota máxima e diz:</p>
+                    <p>"Você não apenas completou o curso... você moldou o futuro da programação!"</p>
+                    <p>Você se forma com honras e é convidado para se tornar Arquiteto de Software Sênior da Guilda Suprema dos Sistemas Sagrados.</p>
+                    <p>🎓 <b>Parabéns, guerreiro. Você concluiu sua jornada com maestria.</b></p>
+                    <p>✨ <i>FIM.</i></p>
+                `;
+            } else if (resposta === "tcc4") {
+                div.innerHTML = `
+                    <p>☠️ Após dias sem dormir, bugs misteriosos começaram a surgir. Os commits não sincronizavam, a autenticação se perdia no limbo digital, e o ranking de commits invertia a ordem por vontade própria.</p>
+                    <p>Mesmo com o poder do seu artefato, ou sua bravura em codar linha por linha, o projeto foi entregue... mas com falhas que o próprio GitHub se recusou a aceitar.</p>
+                    <p>Seu docente, <b>Washington Paiva</b>, te olha com um misto de compaixão e decepção e diz:</p>
+            
+                    <p>"Nem todo dev vence na primeira batalha. Volte, corrija, recomece. O verdadeiro guerreiro se forja no erro."</p>
+        
+                    <p>Você não passou no TCC... ainda. Mas sai da sala com mais conhecimento, cicatrizes digitais e a certeza de que um dia vai criar o sistema perfeito.</p>
+                    <p>⚔️ <i>Às vezes, perder uma luta é o que molda o verdadeiro herói.</i></p>
+                    <p>💀 <b>Fim.</b></p>
+                `;
+            }
+        }
+
+        // Terceira escolha - Mecânica.
+
+        function escolha3mec(resposta) {
+            const div = document.getElementById("historia");
+
+            if (resposta === "mec1") {
+                div.innerHTML = `
+                    <p>⚙️ Com o poder do seu artefato sagrado — O torno lendário! — você conclui o TCC com perfeição mística.</p>
+                    <p>As peças encaixam milimetricamente. Os sensores funcionam com precisão absoluta. Até os professores ficam em silêncio por alguns segundos, boquiabertos com tamanha engenhosidade.</p>
+                    <p><b>Marcelo Francisco</b>, o mestre da forja, levanta de sua cadeira, lentamente, e declara solenemente:</p>
+                    
+                    <p>"Ferreiro... você não apenas passou. Você moldou o futuro com suas mãos. Este projeto será lembrado por gerações de mecânicos!"</p>
+            
+                    <p>🎓 Você se forma com honra, sua ferramenta ganha um lugar no Hall das Lendas do Senai, e dizem que até hoje ela opera sozinha em noites de lua cheia, ensinando novos alunos em segredo.</p>
+                    <p>🏆 <b>Fim – Você se tornou uma lenda entre os mestres da mecânica.</b></p>
+                `;
+            } else if (resposta === "mec2") {
+                div.innerHTML = `
+                    <p>🔧 Você enfrentou o TCC com coragem e suor, recusando a ajuda do seu artefato sagrado. Mas a realidade da mecânica é implacável.</p>
+                    <p>O torno falhou em manter o alinhamento, o sistema de coleta travou, e um dos sensores de runas explodiu em faíscas diante da banca avaliadora.</p>
+                    <p>O silêncio foi mortal. Um dos professores apenas anotou algo no papel. Marcelo Francisco pigarreia e diz:</p>
+           
+                    <p>"Você tem bravura, mas faltou precisão. A forja não perdoa a vaidade de quem nega a ajuda que lhe foi dada."</p>
+                    <p>😔 Seu projeto não foi aprovado. Mas você sai da sala com as mãos calejadas e o olhar firme. Ainda não é um mestre... mas é um aprendiz forjado no fracasso.</p>
+                    <p>💀 <b>Fim.</b></p>
+                `;
+            } else if (resposta === "mec3") {
+                div.innerHTML = `
+                    <p>⚙️ Com o poder do seu artefato sagrado — Manual Almadicoado em Latim! — você conclui o TCC com perfeição mística.</p>
+                    <p>As peças encaixam milimetricamente. Os sensores funcionam com precisão absoluta. Até os professores ficam em silêncio por alguns segundos, boquiabertos com tamanha engenhosidade.</p>
+                    <p><b>Marcelo Francisco</b>, o mestre da forja, levanta de sua cadeira, lentamente, e declara solenemente:</p>
+                    
+                    <p>"Ferreiro... você não apenas passou. Você moldou o futuro com suas mãos. Este projeto será lembrado por gerações de mecânicos!"</p>
+            
+                    <p>🎓 Você se forma com honra, sua ferramenta ganha um lugar no Hall das Lendas do Senai, e dizem que até hoje ela opera sozinha em noites de lua cheia, ensinando novos alunos em segredo.</p>
+                    <p>🏆 <b>Fim – Você se tornou uma lenda entre os mestres da mecânica.</b></p>
+                `;
+            } else if (resposta === "mec4") {
+                div.innerHTML = `
+                    <p>🔧 Você enfrentou o TCC com coragem e suor, recusando a ajuda do seu artefato sagrado. Mas a realidade da mecânica é implacável.</p>
+                    <p>O torno falhou em manter o alinhamento, o sistema de coleta travou, e um dos sensores de runas explodiu em faíscas diante da banca avaliadora.</p>
+                    <p>O silêncio foi mortal. Um dos professores apenas anotou algo no papel. Marcelo Francisco pigarreia e diz:</p>
+           
+                    <p>"Você tem bravura, mas faltou precisão. A forja não perdoa a vaidade de quem nega a ajuda que lhe foi dada."</p>
+                    <p>😔 Seu projeto não foi aprovado. Mas você sai da sala com as mãos calejadas e o olhar firme. Ainda não é um mestre... mas é um aprendiz forjado no fracasso.</p>
+                    <p>💀 <b>Fim.</b></p>
+                `;
+            }
+            
+        }
+
 
 
     </script>
