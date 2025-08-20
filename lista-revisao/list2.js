@@ -37,7 +37,7 @@ let frase = prompt("Digite uma frase:");
 console.log("Quantidade de caracteres:", frase.length);
 console.log("Maiúsculas:", frase.toUpperCase());
 console.log("Minúsculas:", frase.toLowerCase());
-console.log("Substituindo 'bruna' por 'lais':", frase.replace("bruna", "lais"));
+console.log("Trocando 'neymar' por 'diego pituca':", frase.replace("neymar", "pituca"));
 console.log("Contém 'JavaScript'?", frase.includes("JavaScript"));
 console.log("Caractere na posição 5:", frase.charAt(4));
 
@@ -72,7 +72,7 @@ let hoje = new Date();
 console.log("Data atual:", hoje.toLocaleDateString());
 
 // 12
-let aniversario = new Date("2025-12-20");
+let aniversario = new Date("2025-05-10");
 let agora = new Date();
 let diff = aniversario - agora;
 let dias = Math.ceil(diff / (1000 * 60 * 60 * 24));
